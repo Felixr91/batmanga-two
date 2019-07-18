@@ -1,0 +1,363 @@
+body{
+	display: flex;
+}
+
+.wrapper{
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: repeat (auto-fit, minmax(100px, 1fr));
+	/*grid-template-rows: 200px auto 40px;*/
+	grid-template-areas: 
+		"d e a z q"
+		"d e b b q"
+		"d e y y q"
+	;	
+	background-color: white;
+	z-index: -2;
+}
+
+.wrapper2{
+	height: 100vh;
+	position: relative;
+	left: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 170px;
+	color: blue;
+	color: #88bbe3;
+	font-size: 1.5rem;
+	background-color: black;
+	z-index: -3;
+}
+
+.wrapperz{
+	height: 100vh;
+	position: relative;
+	left: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 170px;
+	color: blue;
+	color: #88bbe3;
+	font-size: 1.5rem;
+	background-color: black;
+	z-index: -3;
+}
+
+.wrapper5{
+	height: 100vh;
+	position: relative;
+	left: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 170px;
+	color: blue;
+	color: #88bbe3;
+	font-size: 1.5rem;
+	background-color: rgb(228, 99, 59);
+	z-index: -2;
+}
+
+.wrapper5-1{
+	height: 100vh;
+	position: relative;
+	left: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: blue;
+	color: #88bbe3;
+	font-size: 1.5rem;
+	background-color: rgb(228, 99, 59);
+	z-index: -2;
+	background-image: url('assets/asset.svg');
+	   background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bat-wrapper{
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.batlogo{
+	height: 100vh;
+	width: 100vw;
+	background-image: url('assets/logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 350px;
+/*	mix-blend-mode: multiply;*/
+	clip-path: circle(0% at 50% 50%);
+	background-color: #4d4dfb;
+	transition: 3s;
+}
+
+.hoverbat{
+	clip-path: circle(100% at 50% 50%) !important;
+}
+
+.wrapper3{
+	height: 100vh;
+	width: 1000px;
+	background-image: url('assets/gallery.jpg');
+	background-size: 1010px;
+	background-position: center;
+	position: relative;
+	left: 600px;
+	mix-blend-mode: exclusion;
+}
+
+.wrapper4{
+	height: 100vh;
+	width: 1000px;
+	background-image: url('assets/mangacover2.jpg');
+	background-size: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 600px;
+	transition: 4s;
+	background-color: rgb(227, 255, 0);
+	z-index: -3;
+}
+
+.wrapper6{
+	height: 100vh;
+	width: 1000px;
+	/*background-image: url('assets/jumping.jpg');*/
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 600px;
+	transition: 4s;
+	/*background-color: rgb(227, 255, 0);*/
+	background-color: black;
+	z-index: -3;
+}
+
+.wrapper4:hover{
+	background-size: 800px;
+}
+
+.wrapper2 p{
+	width: 800px;
+}
+
+.wrapperz p{
+	width: 800px;
+}
+
+.four{
+	grid-area: z;
+	mix-blend-mode: difference;
+	color: #00afff;
+}
+
+@media only screen and (max-height: 800px) {
+	.four span{
+		font-size: 100px !important;
+		left: 0px !important;
+	}
+	.four {
+		left: -40px;
+	}
+	.five span{
+		font-size: 150px !important;
+	}
+	.five{
+		position: relative;
+    	top: -190px;
+    	left: 200px;
+	}
+	.six span{
+		font-size: 200px !important;
+	}
+	.six{
+		position: relative;
+		top: -100px;
+	}
+	.death{
+		right: -1400px !important;
+	}
+	.wrapper4:hover{
+		background-size: 500px !important;
+		background-color: #fc0;
+	}
+	.wrapper4{
+		background-color: black;
+	}
+}
+
+.five{
+	grid-area: b;
+	text-align: end;
+	mix-blend-mode: difference;
+	color: #00afff;
+}
+
+.six{
+	grid-area: y;
+	mix-blend-mode: difference;
+	color: #00afff;
+}
+
+.rotate{
+	-ms-transform: rotate(-90deg); /* IE 9 */
+  	-webkit-transform: rotate(-90deg); /* Safari prior 9.0 */
+  	transform: rotate(-90deg); /* Standard syntax */
+  	position: relative;
+  	bottom: 30px;
+}
+
+.one{
+	background-image: url('assets/batrob.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	grid-area: d;
+	width: 100%;
+	min-width: 500px;
+}
+
+.two{
+	grid-area: e;
+	height: 100vh;
+	width: 200px;
+	display: grid;
+	grid-gap: 3px;
+	background-color: #fc0;
+	grid-template-areas: 
+		"e f"
+		"e f"
+		"d f"
+		"g f"
+		"h f"
+		"i f";
+}
+
+.two-on-scroll{
+	grid-area: e;
+	height: 100vh;
+	width: 200px;
+	display: grid;
+	grid-gap: 3px;
+	position: fixed;
+	z-index: 1;
+	background-color: #fc0;
+	grid-template-areas: 
+		"e f"
+		"e f"
+		"d f"
+		"g f"
+		"h f"
+		"i f";
+}
+
+.hide{
+	visibility: hidden;
+}
+
+/*.absolution{
+	position: fixed;
+	z-index: 1;
+}*/
+
+.ee{
+	grid-area: e;
+}
+
+.dd{
+	grid-area: d;
+}
+
+.ff{
+	grid-area: f;
+	background-color: black;
+}
+
+.gg{
+	grid-area: g;
+}
+
+.hh{
+	grid-area: h;
+}
+
+.ii{
+	grid-area: i;
+}
+
+.ff{
+	grid-area: f;
+}
+
+.three{
+	color: orange;
+	mix-blend-mode: difference;
+}
+
+.four span{
+	position: relative;
+	left: -100px;
+	font-size: 200px;
+}
+
+.five span{
+	position: relative;
+	right: 220px;
+	font-size: 280px;
+}
+
+.six span{
+	position: relative;
+	left: 130px;
+	font-size: 300px;
+}
+
+.nav-title{
+	position: relative;
+	top: 130px;
+	font-size: 2rem;
+	text-align: end;
+}
+
+.three{
+	grid-area: a;
+	width: 400px;
+	margin-top: 30px;
+	padding: 50px;
+}
+
+.death{
+	clip-path: polygon(100% 0, 75% 50%, 100% 100%, 20% 100%, 0 50%, 20% 0%);
+	background-image: url('assets/multicover.jpg');
+	background-position: right;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	grid-area: q;
+	width: 70vw;
+	height: 100vh;
+	right: -850px;
+	position: absolute;
+	z-index: -1;
+}
+
+.textbg{
+	position: relative;
+    left: 180px;
+    width: 800px;
+    height: 100vh;
+    padding: 200px;
+}
